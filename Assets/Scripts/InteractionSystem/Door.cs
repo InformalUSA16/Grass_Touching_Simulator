@@ -16,6 +16,7 @@ public class Door : MonoBehaviour, IInteractable
         if (inventorty.HasKey)
         {
             Debug.Log("Opening door!");
+            Destroy(this.gameObject);
                     return true;
         }
 
