@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         // enable the input actions and set the cursor settings for an FPS camera
         _inputActions.Enable();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         // Disable the input actions and set the cursor settings back to default for the app
         _inputActions.Disable();
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
 
