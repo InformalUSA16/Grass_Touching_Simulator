@@ -7,13 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class Escape : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collisionInfo)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collisionInfo.gameObject.name=="Grass")
-        {
-            Debug.Log("Player Has Escaped!!!");
-            SceneManager.LoadScene(2);
-        }
+        Debug.Log("Player Has Escaped!!!");
+        SceneManager.LoadScene(2);
     }
 }
 
