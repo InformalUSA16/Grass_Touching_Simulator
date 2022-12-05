@@ -26,7 +26,8 @@ public class Interactor : MonoBehaviour
             if (_interactable != null)
             {
                 if (_interactionPromptUI.IsDisplayed) _interactionPromptUI.SetUp(_interactable.InteractionPromt);
-                
+
+                //if () ;
                 if (Keyboard.current.eKey.wasPressedThisFrame) _interactable.Interact(this);
             }
             
